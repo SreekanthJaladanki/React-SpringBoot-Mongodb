@@ -1,0 +1,2 @@
+go inside app and run "npm install" then "npm run build" then "serve -s build"
+go inside webb and run "mvn spring-boot:run" or "mvn package" and then run the previous command
