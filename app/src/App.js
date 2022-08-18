@@ -71,12 +71,12 @@ class  App extends React.Component {
                  <div className="input-field col s12">
                     <i className="material-icons prefix">person</i>
                     <input value={this.state.name} onChange={(e)=>this.setState({name:e.target.value})} type="text" id="autocomplete-input" className="autocomplete"  />
-                    <label htmlFor="autocomplete-input">Enter Name</label>
+                    <label htmlFor="autocomplete-input">Name</label>
                   </div>
                   <div className="input-field col s12">
                     <i className="material-icons prefix">mail</i>
                     <input value={this.state.email} onChange={(e)=>this.setState({email:e.target.value})} type="email" id="autocomplete-input" className="autocomplete"  />
-                    <label htmlFor="autocomplete-input">Enter Email</label>
+                    <label htmlFor="autocomplete-input">Email</label>
                   </div>
                   <div className="input-field col s12">
                     <i className="material-icons prefix">vpn_key</i>
