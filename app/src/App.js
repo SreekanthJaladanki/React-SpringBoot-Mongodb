@@ -76,7 +76,7 @@ class  App extends React.Component {
                   <div className="input-field col s12">
                     <i className="material-icons prefix">mail</i>
                     <input value={this.state.email} onChange={(e)=>this.setState({email:e.target.value})} type="email" id="autocomplete-input" className="autocomplete"  />
-                    <label htmlFor="autocomplete-input">Your Email</label>
+                    <label htmlFor="autocomplete-input">Email</label>
                   </div>
                   <div className="input-field col s12">
                     <i className="material-icons prefix">vpn_key</i>
