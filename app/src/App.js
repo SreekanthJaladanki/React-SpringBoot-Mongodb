@@ -81,7 +81,7 @@ class  App extends React.Component {
                   <div className="input-field col s12">
                     <i className="material-icons prefix">vpn_key</i>
                     <input value={this.state.password} onChange={(e)=>this.setState({password:e.target.value})} type="password" id="autocomplete-input" className="autocomplete"  />
-                    <label htmlFor="autocomplete-input">Password</label>
+                    <label htmlFor="autocomplete-input">Enter Password</label>
                   </div>
                   <button className="btn waves-effect waves-light right" type="submit" name="action">Submit
                     <i className="material-icons right">send</i>
