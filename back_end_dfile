@@ -1,0 +1,7 @@
+FROM maven:3.8.6-jdk-11
+RUN mkdir /abc
+COPY ./web /abc
+WORKDIR /abc
+RUN ["mvn","package"]
+ENTRYPOINT ["mvn","spring-boot:run"]
+EXPOSE 8080
