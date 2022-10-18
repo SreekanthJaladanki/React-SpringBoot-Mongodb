@@ -8,7 +8,7 @@
 
 FROM registry.gitlab.com/kubernetes109/kuber1/node
 RUN mkdir /build
-COPY build /build
+COPY ./app/build /build
 RUN npm install --global serve -y
 ENTRYPOINT ["serve","-s","build"]
 EXPOSE 3000
