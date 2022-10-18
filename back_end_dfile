@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/demo1506/abcd/maven
+FROM registry.gitlab.com/kubernetes109/kuber1/mvn
 RUN mkdir /abc
 COPY ./web /abc
 WORKDIR /abc
