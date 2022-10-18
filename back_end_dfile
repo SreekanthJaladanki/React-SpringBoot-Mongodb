@@ -1,4 +1,4 @@
-FROM maven:3.8.6-jdk-11
+FROM registry.gitlab.com/demo1506/abcd/maven
 RUN mkdir /abc
 COPY ./web /abc
 WORKDIR /abc
