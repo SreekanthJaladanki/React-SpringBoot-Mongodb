@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/demo1506/abcd/node
+FROM registry.gitlab.com/kubernetes109/kuber1/node
 RUN mkdir /build
 COPY ./app/build /build
 RUN npm install --global serve -y
