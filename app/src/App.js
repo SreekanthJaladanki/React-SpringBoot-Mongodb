@@ -12,7 +12,7 @@ class  App extends React.Component {
     }
   }
   componentDidMount(){
-    axios.get("http://ec2-54-209-180-76.compute-1.amazonaws.com/backend/api/")
+    axios.get("http://ec2-52-91-51-215.compute-1.amazonaws.com/backend/api/")
     .then((res)=>{
       this.setState({
         users:res.data,
@@ -27,7 +27,7 @@ class  App extends React.Component {
     console.log(id)
     evenet.preventDefault();
     if(id===0){
-      axios.post("http://ec2-54-209-180-76.compute-1.amazonaws.com/backend/api/",{
+      axios.post("http://ec2-52-91-51-215.compute-1.amazonaws.com/backend/api/",{
         name:this.state.name,
         email:this.state.email,
         password:this.state.password
@@ -35,7 +35,7 @@ class  App extends React.Component {
         this.componentDidMount();
       })
     }else{
-      axios.put("http://ec2-54-209-180-76.compute-1.amazonaws.com/backend/api/",{
+      axios.put("http://ec2-52-91-51-215.compute-1.amazonaws.com/backend/api/",{
         id:id,
         name:this.state.name,
         email:this.state.email,
@@ -46,13 +46,13 @@ class  App extends React.Component {
     }
   }
   delete(id){
-    axios.delete("http://ec2-54-209-180-76.compute-1.amazonaws.com/backend/api/"+id)
+    axios.delete("http://ec2-52-91-51-215.compute-1.amazonaws.com/backend/api/"+id)
     .then(()=>{
       this.componentDidMount();
     })
   }
   edit(id){
-    axios.get("http://ec2-54-209-180-76.compute-1.amazonaws.com/backend/api/"+id)
+    axios.get("http://ec2-52-91-51-215.compute-1.amazonaws.com/backend/api/"+id)
     .then((res)=>{
       this.setState({
         id:res.data.id,
