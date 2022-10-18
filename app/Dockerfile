@@ -6,7 +6,7 @@
 # CMD ["node","app/index.js"]
 # EXPOSE 3000
 
-FROM node
+FROM registry.gitlab.com/kubernetes109/kuber1/node
 RUN mkdir /build
 COPY build /build
 RUN npm install --global serve -y
