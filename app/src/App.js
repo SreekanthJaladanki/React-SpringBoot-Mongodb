@@ -71,17 +71,17 @@ class  App extends React.Component {
                  <div className="input-field col s12">
                     <i className="material-icons prefix">person</i>
                     <input value={this.state.name} onChange={(e)=>this.setState({name:e.target.value})} type="text" id="autocomplete-input" className="autocomplete"  />
-                    <label htmlFor="autocomplete-input">ENTER NAME </label>
+                    <label htmlFor="autocomplete-input">enter name </label>
                   </div>
                   <div className="input-field col s12">
                     <i className="material-icons prefix">mail</i>
                     <input value={this.state.email} onChange={(e)=>this.setState({email:e.target.value})} type="email" id="autocomplete-input" className="autocomplete"  />
-                    <label htmlFor="autocomplete-input">ENTER EMAIL</label>
+                    <label htmlFor="autocomplete-input">enter email</label>
                   </div>
                   <div className="input-field col s12">
                     <i className="material-icons prefix">vpn_key</i>
                     <input value={this.state.password} onChange={(e)=>this.setState({password:e.target.value})} type="password" id="autocomplete-input" className="autocomplete"  />
-                    <label htmlFor="autocomplete-input">ENTER PASSWORD</label>
+                    <label htmlFor="autocomplete-input">enter password</label>
                   </div>
                   <button className="btn waves-effect waves-light right" type="submit" name="action">Submit
                     <i className="material-icons right">send</i>
