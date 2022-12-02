@@ -8,7 +8,7 @@
 
 FROM node
 RUN mkdir /build
-COPY ./app/build /build
+COPY ./build /build
 RUN npm install --global serve -y
 ENTRYPOINT ["serve","-s","build"]
 EXPOSE 3000
