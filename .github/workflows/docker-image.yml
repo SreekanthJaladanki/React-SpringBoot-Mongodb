@@ -15,5 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker login -u sheerazzulfi -p Zulfi5171*
-           docker build . --file ./app/Dockerfile --tag sheerazzulfi/samplenode
+      run: docker login -u sheerazzulfi -p Zulfi5171* && docker build . --file ./app/Dockerfile --tag sheerazzulfi/samplenode
