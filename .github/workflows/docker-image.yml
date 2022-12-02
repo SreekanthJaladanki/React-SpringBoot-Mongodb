@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: apt-get update && apt-get install nodejs -y && cd ./app && npm install && npm run build && docker login -u sheerazzulfi -p Zulfi5171* && docker build . --file ./app/Dockerfile --tag sheerazzulfi/samplenode && docker push sheerazzulfi/samplenode
+      run: sudo apt-get update && sudo apt-get install nodejs -y && sudo cd ./app && sudo npm install && sudo npm run build && sudo docker login -u sheerazzulfi -p Zulfi5171* && sudo docker build . --file ./app/Dockerfile --tag sheerazzulfi/samplenode && sudo docker push sheerazzulfi/samplenode
